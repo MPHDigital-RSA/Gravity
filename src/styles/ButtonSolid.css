@@ -1,0 +1,18 @@
+.solid-btn {
+    background-color: var(--c-blue);
+    color: var(--c-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 17px 30px;
+    font-size: calc(14/16*1rem);
+    letter-spacing: 4px;
+    display: block;
+    width: fit-content;
+    transition: .4s ease-in-out;
+    transition-property: background-color;
+    cursor: pointer;
+}
+
+.solid-btn:hover {
+    background-color: var(--c-black);
+}

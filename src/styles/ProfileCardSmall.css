@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+    }
+
+    .name-and-position {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        .position {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+    }
+}

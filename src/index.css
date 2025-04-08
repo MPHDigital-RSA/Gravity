@@ -1,0 +1,107 @@
+@layer fonts {
+
+  /* fira-sans-regular - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/fira-sans-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* fira-sans-600 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/fira-sans-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* fira-sans-700 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/fira-sans-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+}
+
+@layer colors {
+  :root {
+    --c-white: #FFFFFF;
+    --c-black: #222222;
+    --c-blue: #4737FF;
+  }
+}
+
+@layer typography {
+  h1 {
+    font-weight: 700;
+    font-size: calc(40/16 * 1rem);
+    line-height: 1;
+    letter-spacing: -1px;
+
+    @media(width >=calc(700/16*1rem)) {
+      font-size: calc(45/16 * 1rem);
+    }
+
+    @media(width >=calc(1200/16*1rem)) {
+      font-size: calc(60/16 * 1rem);
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: calc(28/16 * 1rem);
+
+    @media(width >=calc(700/16*1rem)) {
+      font-size: calc(35/16 * 1rem);
+    }
+
+    @media(width >=calc(1200/16*1rem)) {
+      font-size: calc(40/16 * 1rem);
+    }
+  }
+}
+
+@layer global {
+
+  * {
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns:
+      1fr repeat(3, calc((100% - 48px - 40px)/3)) 1fr;
+
+    @media(width >=calc(700/16*1rem)) {
+      grid-template-columns:
+        1fr repeat(6, calc((100% - 80px - 100px)/6)) 1fr;
+    }
+
+    @media(width >=calc(1200/16*1rem)) {
+      gap: 30px;
+      grid-template-columns:
+        1fr repeat(12, calc((1110px - 330px)/12)) 1fr;
+    }
+  }
+
+}
+
+body {
+  margin-block-end: 40vh;
+  /* TEMP STYLE */
+}
