@@ -10,7 +10,7 @@
         order: 2;
 
         @media (width >=calc(700/16*1rem)) {
-            grid-column: 2/ 4;
+            grid-column: 2/ 5;
             order: unset;
             height: 500px;
             align-self: center;
@@ -36,7 +36,7 @@
         }
 
         @media (width >=calc(700/16*1rem)) {
-            grid-column: 4 / -2;
+            grid-column: 5 / -2;
             padding-inline-start: 40px;
             align-self: center;
         }

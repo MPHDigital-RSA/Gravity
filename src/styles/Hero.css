@@ -67,9 +67,14 @@
     object-fit: cover;
     margin-block-start: -150px;
     justify-self: flex-end;
-    background-color: red;
+    background: url(../assets/heroVideo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 221px;
     height: 179px;
+
+    box-shadow: -11px 34px 127px rgba(0, 0, 0, 0.422);
 
     @media(width >=calc(700/16*1rem)) {
         grid-column: 5 / 7;
