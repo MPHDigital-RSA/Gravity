@@ -36,13 +36,16 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    animation-name: load-menu;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
 
     a {
         text-transform: uppercase;
         letter-spacing: 1px;
         text-decoration: none;
         color: var(--c-black);
-        transition: .4s;
+        transition: .2s;
         transition-property: color;
         font-weight: 700;
         font-size: 18px;
@@ -53,6 +56,17 @@
     }
 
 }
+
+@keyframes load-menu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 @media (width >=calc(700 / 16 * 1rem)) {
     .menu {
