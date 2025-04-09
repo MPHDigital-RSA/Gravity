@@ -25,3 +25,18 @@ form input::placeholder {
     font-weight: 600;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
 }
+
+@media(width >=calc(700/16*1rem)) {
+    form {
+        /* position: static; */
+        grid-column: 6/-2;
+    }
+}
+
+@media(width >=calc(1200/16*1rem)) {
+    form {
+        /* position: static; */
+        grid-column: 9/-2;
+        top: 141px;
+    }
+}

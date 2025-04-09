@@ -30,7 +30,7 @@ function Navbar() {
 
                 <img src={menu} alt="Gravity home" className='menu' width="34" height="14" onClick={handleMenu} />
 
-                {isSearchBarOpened &&
+                {(isSearchBarOpened && !isMenuOpened) &&
                     <NavSearchBar />
                 }
             </div>
