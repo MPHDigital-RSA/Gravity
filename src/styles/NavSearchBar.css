@@ -1,0 +1,27 @@
+form {
+    grid-column: 2/-2;
+    position: absolute;
+    top: 83px;
+    right: 0px;
+    left: 0px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.104);
+    color: var(--c-black);
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+form input::placeholder {
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #D4D4D4;
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
