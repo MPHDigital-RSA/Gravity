@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonSolid from './ButtonSolid'
 import '../styles/Hero.css'
 import heroImage from '../assets/heroImage.png'
-// import heroVideo from '../assets/heroVideo.png'
+import heroVideo from '../assets/heroVideo.png'
 
 function Hero() {
     return (
@@ -15,7 +15,9 @@ function Hero() {
 
             <img src={heroImage} alt="this is the hero image placeholder graphic" width='655' height='840' className='hero-image' />
 
-            {/* <img src={heroVideo} alt="this is the hero video placeholder graphic" width='400' height='310' className='hero-video' /> */}
+            <div className="hero-video">
+
+            </div>
         </div>
     )
 }

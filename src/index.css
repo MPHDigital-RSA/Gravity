@@ -51,6 +51,7 @@
 
     @media(width >=calc(700/16*1rem)) {
       font-size: calc(45/16 * 1rem);
+      max-width: 20ch;
     }
 
     @media(width >=calc(1200/16*1rem)) {

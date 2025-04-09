@@ -60,7 +60,7 @@
     }
 
     .search {
-        grid-column: 5;
+        grid-column: 6;
         justify-self: start;
     }
 }
