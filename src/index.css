@@ -61,7 +61,7 @@
 
   h2 {
     font-weight: 600;
-    font-size: calc(28/16 * 1rem);
+    font-size: calc(24/16 * 1rem);
 
     @media(width >=calc(700/16*1rem)) {
       font-size: calc(35/16 * 1rem);

@@ -25,10 +25,12 @@
 
     @media (width >=calc(380/16*1rem)) {
         max-width: 100ch;
+        font-size: 14px;
     }
 
     @media (width >=calc(700/16*1rem)) {
         max-width: 35ch;
+        font-size: 16px;
     }
 
     @media (width >=calc(990/16*1rem)) {

@@ -27,6 +27,14 @@
         flex-direction: column;
         gap: 20px;
 
+        p {
+            font-size: 14px;
+
+            @media (width >=calc(700/16*1rem)) {
+                font-size: 16px;
+            }
+        }
+
         @media (width >=calc(700/16*1rem)) {
             grid-column: 4 / -2;
             padding-inline-start: 40px;

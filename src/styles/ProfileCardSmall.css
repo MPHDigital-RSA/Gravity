@@ -1,6 +1,6 @@
 .flex {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 
     img {
@@ -10,17 +10,26 @@
     .name-and-position {
         display: flex;
         flex-direction: column;
+        gap: 8px;
 
         .name {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 1;
             font-weight: 600;
+
+            @media(width>=calc(700/16*1rem)) {
+                font-size: 22px;
+            }
         }
 
         .position {
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 14px;
+            line-height: 1;
             font-weight: 400;
+
+            @media(width>=calc(700/16*1rem)) {
+                font-size: 18px;
+            }
         }
     }
 }
