@@ -1,0 +1,46 @@
+.portfolio {
+    padding-block-start: 80px;
+}
+
+.subtitle,
+.heading-and-filter {
+    grid-column: 2/-2;
+}
+
+.heading-and-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    @media(width>=calc(700/16*1rem)) {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .filter {
+        display: flex;
+        gap: 15px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            color: #22222230;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+
+
+            &:nth-child(1) {
+                color: var(--c-blue);
+            }
+
+            &:hover {
+                color: var(--c-blue);
+            }
+        }
+    }
+}

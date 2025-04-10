@@ -101,6 +101,26 @@
     }
   }
 
+  .subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .line {
+      width: 10px;
+      background-color: var(--c-black);
+      height: 2px;
+    }
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--c-black);
+    }
+  }
+
 }
 
 body {

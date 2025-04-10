@@ -41,7 +41,7 @@ function Services() {
         <div className='wrapper services'>
             <div className="subtitle">
                 <div className="line"></div>
-                <p>Services</p>
+                <span>Services</span>
             </div>
 
             <h2 className="title">
