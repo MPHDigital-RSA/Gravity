@@ -4,7 +4,7 @@ import '../styles/Portfolio.css'
 const filterLinks = [
     'all',
     'branding',
-    'web development',
+    'web dev',
     'marketing'
 ]
 
