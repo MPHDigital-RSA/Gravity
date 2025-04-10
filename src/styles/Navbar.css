@@ -57,6 +57,13 @@
 
 }
 
+.mobile-menu.reverse-animation {
+    animation-name: reverse-load-menu;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+
+}
+
 @keyframes load-menu {
     0% {
         opacity: 0;
@@ -64,6 +71,16 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes reverse-load-menu {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 

@@ -38,6 +38,7 @@
   :root {
     --c-white: #FFFFFF;
     --c-black: #222222;
+    --c-light-gray: #C4C4C4;
     --c-blue: #4737FF;
   }
 }

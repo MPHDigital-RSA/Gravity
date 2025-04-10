@@ -1,0 +1,44 @@
+.services {
+    padding-block: 80px;
+}
+
+.subtitle,
+.title,
+.carousel-nav {
+    grid-column: 2/-2;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+    p {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--c-black);
+    }
+}
+
+.line {
+    width: 10px;
+    background-color: var(--c-black);
+    height: 2px;
+}
+
+.carousel-nav {
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+
+.carousel-button {
+    background-color: var(--c-light-gray);
+    width: 24px;
+    height: 24px;
+    border: none;
+}

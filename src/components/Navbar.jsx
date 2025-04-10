@@ -36,7 +36,7 @@ function Navbar() {
             </div>
 
             {isMenuOpened &&
-                <div className="mobile-menu">
+                <div className='mobile-menu '>
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
