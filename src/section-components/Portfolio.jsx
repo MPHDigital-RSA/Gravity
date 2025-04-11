@@ -8,11 +8,12 @@ function Portfolio() {
 
     const [items, setItems] = useState(portfolioItems);
 
-    // create a new array with filtered items according to a category value
+    // create a new array with categories to use for filter navigation links
     const filterLinks = [... new Set(portfolioItems.map((value) => value.category))];
 
-    const filterItems = (cat) => {
-        const newData = portfolioItems.filter((value) => value.category === cat);
+    // create a new array with filtered items according to a category value
+    const filterItems = (category) => {
+        const newData = portfolioItems.filter((value) => value.category === category);
         setItems(newData);
     }
 
@@ -39,7 +40,7 @@ function Portfolio() {
 
             <div className="portfolio-grid">
                 {items.map((item, index) => (
-                    <div className='portfolio-item' key={index} style={{ backgroundImage: `url(${item.image})` }}>
+                    <div className='portfolio-item' key={index} style={{ backgroundImage: `url(${item.image})` }} onClick={() => alert(`${item.title} clicked`)}>
                         <span style={{
                             backgroundImage: `url(${item.image})`,
                             color: `${item.titleColor}`,
@@ -53,7 +54,7 @@ function Portfolio() {
             </div>
 
             <div className="button">
-                <ButtonSolid text='+ projects' link='#' />
+                <ButtonSolid text='+ our works' link='#' />
             </div>
 
         </div>
