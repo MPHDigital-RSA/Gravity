@@ -78,11 +78,9 @@
 .image span {
     font-size: 8px;
     text-transform: uppercase;
-    /* background-color: red; */
     font-weight: 600;
     letter-spacing: 2px;
     padding: 5px;
-    border-radius: 20px;
     position: absolute;
     top: 10px;
     left: 10px;
