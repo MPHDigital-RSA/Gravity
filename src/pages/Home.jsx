@@ -5,6 +5,7 @@ import MessageSection from '../components/MessageSection'
 import Services from '../section-components/Services'
 import Portfolio from '../section-components/Portfolio'
 import Testimonials from '../section-components/Testimonials'
+import OurClients from '../section-components/OurClients'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <Services />
             <Portfolio />
             <Testimonials />
+            <OurClients />
         </div>
     )
 }

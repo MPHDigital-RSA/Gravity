@@ -22,11 +22,11 @@ function Testimonials() {
             <div className="left-col">
                 <div className="subtitle">
                     <div className="line"></div>
-                    <span>Services</span>
+                    <span>Testimonials</span>
                 </div>
 
                 <h2>
-                    "Professionals in their craft! All products were super great with strong attention to details, and overall vibe"
+                    "All products were super great with strong attention to details, and overall vibe"
                 </h2>
 
                 <div className="profile">
